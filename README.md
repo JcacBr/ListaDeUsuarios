@@ -18,7 +18,7 @@
 </ul>
 
 # Como executar o projeto
-<p>Para executar a aplicação, extraia e abra o arquivo "Lista de Usuários.zip" e posteriormente execute o arquivo "index.html" em seu navegador preferido ou acesse ela por este  <a href="https://JcacBr.github.io/ListaDeUsuariosa">link.</a></p>
+<p>Para executar a aplicação, extraia e abra o arquivo "Lista de Usuários.zip" e posteriormente execute o arquivo "index.html" em seu navegador preferido ou acesse ela por este  <a href="https://jcacbr.github.io/ListaDeUsuarios/">link.</a></p>
 
 # Funcionalidades do projeto
 <ul>
