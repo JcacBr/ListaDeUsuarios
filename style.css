@@ -1,0 +1,193 @@
+/*importando a fonte roboto mono*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*limpando as pre definições do navegador*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*estilizando a div de loading*/
+#div_loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column  ;
+    color: white;
+    font-size: 2rem;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6b6d6b;
+    transition: all 1s;
+}
+
+#div_loading p{
+margin-top: 0.5rem
+}
+
+#div_loading img{
+    width: 150px;
+    height: 150px;
+}
+
+/*mudando a cor do fundo do site*/
+body{
+    background-color: #4d4d4d;
+}
+
+/*estilizando o cabeçalho do site*/
+nav{
+    background-color: #914A89;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    min-height: 10vh;
+    padding-left: 10%;
+    
+}
+
+nav p{
+    font-family: "Roboto One", serif;
+    font-size: 2rem;
+    color: #262626;
+}
+
+/*estilizando o container que inclui campo de busca e tabela*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+/*estilizando o campo de busca e botão*/
+.container_form{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    height: 2rem;
+    margin: 1.5rem;
+}
+
+#container_form_inputText{
+    width: 95%;
+    height: 100%;
+    border: 2px solid  #ddd;
+    border-radius: 7px;
+    padding-left: 1rem;
+    background-color: #ddd;
+    color: #914A89;
+}
+
+#container_form_btn{
+    border: 0;
+    background: none;
+    margin-left: 1rem;
+}
+
+#container_form_btn img{
+    height: 100%;
+}
+
+/*estilzando a tabela e seus itens*/
+#container_table {
+    width: 80%;
+    background-color: #1F1B24;
+    color: #E0E0E0;
+    box-shadow: 2px 3px 5px 1px#914A89;
+    border-collapse: collapse; 
+}
+
+#container_table th {
+    background-color: #3e3e3e;
+    color: #FFFFFF;
+    padding: 1rem; 
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+#container_table td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #333333;
+}
+
+#container_table tr:nth-child(even) {
+    background-color: #262626;
+}
+
+#container_table tr:hover {
+    background-color: #914A89; 
+}
+
+/*estilizando a div deerro e seus componentes*/
+#div_erro{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    word-break: break-all;
+}
+
+#div_erro img{
+    width: 150px;
+    height: 150px;
+}
+
+#div_erro p {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    word-break: normal;
+}
+
+/*layout para celulares*/
+@media (max-width: 480px){
+   
+    nav{
+        width: 90%;
+        min-height: 8vh;
+        padding-left: 10%;
+        
+    }
+    
+    nav p{
+        font-family: "Roboto One", serif;
+        font-size: 1.5rem;
+        color: #262626;
+    }
+
+    .container_form{
+        width: 90%;
+        margin: 1rem
+    }
+
+    #container_form_inputText{
+        padding-left: 0.5rem;
+    }
+
+    #container_table {
+        width: 90%;
+    }
+
+    #container_table th {
+        padding: 0.5rem;
+    }  
+
+    #container_table td {
+        word-break: break-all;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <nav>
+        <p>Lista de Usuários</p>
+    </nav>
+    <section class="container">
+        <div class="container_form">
+            <input type="text" name="inputText" id="container_form_inputText" autofocus placeholder="Digite o dado que gostaria de buscar. Caso queira buscar todos os usuarios, deixe este campo vazio.">
+            <button id="container_form_btn" onclick="buscarDados(container_form_inputText.value)">
+                <img src="img/lupa.png" >
+            </button>
+        </div>
+        <table id="container_table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Cidade</th>
+                </tr>
+            </thead>
+            <tbody id="container_table_tbody">
+                
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>
